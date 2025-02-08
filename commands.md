@@ -7,6 +7,9 @@
 - git push -u origin main (to push the local repo to the remote repo and set the upstream tracking information)
 
 
+- git pull (to retrieve updated changes on online/remote repo)
+
+
 
 <!-- Next time you modify your files and try to commit, use this command -->
 - git add . (only to add new files into track)
