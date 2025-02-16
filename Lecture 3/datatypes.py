@@ -91,7 +91,7 @@ teacher = {
 
 teacher = ["lahore", 22, "talha"]
 
-print("teacher name is ", teacher[0])
+print("teacher name is ", teacher["city"])
 
 
 test_list  = [10, 30, 20] # mutable
@@ -140,3 +140,6 @@ test_list_2 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 print(test_list_2[-1:5:-1])
 # -1:5:-2
 # 100, 90, 80, 70
+
+
+test = (23,)

@@ -2,7 +2,6 @@
 x = 45
 y = 10
 
-
 # Arithmetic Operators
 sum_result = x + y # addition
 
