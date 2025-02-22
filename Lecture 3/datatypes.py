@@ -10,23 +10,26 @@
 # None
 # undefined
 
+print('hello world')
 
-test = 'Hello World' # array of chars / list of chars
-x = 45 # int
+# assignment operator
+test = 'Hello World' # array of chars / list of chars # string
+x = 45 + 32 # integers
 y = 43 # int
 z = 2.5 # float
 a = True # boolean
 b = False # boolean
 
+print(test)
 
-result = x / y
+result = 2 // 3 # modulus operator
 # print(result)
 # print(45)
 # print(b)
 
 # area of triangle
 # area of circle
-
+test = 45
 
 students = ['ali', 'ahmed', 'khan'] # list
 
@@ -91,7 +94,7 @@ teacher = {
 
 teacher = ["lahore", 22, "talha"]
 
-print("teacher name is ", teacher["city"])
+print("teacher name is ", teacher["name"])
 
 
 test_list  = [10, 30, 20] # mutable
