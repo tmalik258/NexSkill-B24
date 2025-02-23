@@ -3,9 +3,10 @@
 # objects
 
 class Cat: # encapsulation
-    legs = 4 # attributes
-    tail = True
-    name = "Tiger"
+    def __init__(self, l, t, n): # constructor
+        self.legs = l
+        self.tail = t
+        self.name = n
 
     def meow(self): # methods
         print("meow")
@@ -19,27 +20,28 @@ class Cat: # encapsulation
         print("sleeping")
 
     def display(self):
-        print(self.name)
+        # a = "hello"
+        # print(f"{a} world") # f string
+        print(f"Name: {self.name}, Legs: {self.legs}, Tail: {self.tail}")
 
 
-cat1 = Cat()
-cat2 = Cat()
+cat1 = Cat(4, True, "Tiger") # object creation
+cat2 = Cat(3, True, "Alex")
+cat3 = Cat(4, False, "Snow")
 
-cat1.play()
+# cat1.play()
+# cat1.display()
+# cat2.dispaly()
 
 cat1.display()
+cat2.display()
+cat3.display()
 
-cat2.dispaly()
+# cat2.sleep()
+# cat2.meow()
 
-print(cat1.legs)
-print(cat2.tail)
-print(cat2.name)
-
-cat2.sleep()
-cat2.meow()
-
-cat1.meow()
-cat1.sleep()
+# cat1.meow()
+# cat1.sleep()
 
 
 # def sleep():
