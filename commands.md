@@ -16,3 +16,16 @@
 - git commit -am "message"
 <!-- And after commiting, use this command to push -->
 - git push
+
+
+# Django
+- pip list (to check which packages are installed)
+- pip install virtualenv
+- virtualenv venv (venv is your virtual environment name)
+- venv/scripts/activate (to activate environment)
+- Set-ExecutionPolicy RemoteSigned -Scope CurrentUser (if error occurs while activating venv)
+- pip install django
+- django-admin startproject projectname (to create a new project)
+- django-admin startproject mainappname .  (to create only main app along with manage.py and not project folder)
+- python manage.py runserver (to start the development server)
+- ctrl + c (to stop the server)
