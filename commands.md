@@ -29,3 +29,10 @@
 - django-admin startproject mainappname .  (to create only main app along with manage.py and not project folder)
 - python manage.py runserver (to start the development server)
 - ctrl + c (to stop the server)
+
+- python manage.py makemigrations (to create migrations for models)
+- python manage.py migrate (to apply migrations to the database)
+- python manage.py createsuperuser (to create a superuser)
+
+- python manage.py startapp appname (to create a new app)
+- django-admin startapp appname (to create a new app) (both are good)
