@@ -10,7 +10,6 @@
 - git pull (to retrieve updated changes on online/remote repo)
 
 
-
 <!-- Next time you modify your files and try to commit, use this command -->
 - git add . (only to add new files into track)
 - git commit -am "message"
