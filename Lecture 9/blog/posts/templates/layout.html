@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        {% block title %}
+        {% endblock title %}       
+    </title>
+
+    <!-- inline styling
+    internal styling
+    external styling -->
+
+    <!-- element selector -->
+    <!-- id selector -->
+    <!-- class selector -->
+    <style>
+      h1 {
+        color: red;
+        font-size: 30px;
+      }
+
+      #first_heading {
+        color: white;
+        background-color: black;
+      }
+
+      .abc {
+        color: green;
+      }
+    </style>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <!-- <h1 id="first_heading" style="color: blue; font-size: 20px;">abcd</h1>
+
+    <p class="m-5">hello this is me</p>
+
+    <span id="blahblahblah">this is not me</span>
+
+    <div class="abc">this is you</div> -->
+
+    <!-- to wrap an existing element with another element -->
+    <!-- emmet: wrap with abbreviation -->
+    <header>
+      <ul>
+        <li>
+          <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li>
+          <!-- jinja syntax -->
+          <a href="{% url 'about' %}">About</a>
+        </li>
+      </ul>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer></footer>
+  </body>
+</html>
