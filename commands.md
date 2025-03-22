@@ -36,3 +36,8 @@
 
 - python manage.py startapp appname (to create a new app)
 - django-admin startapp appname (to create a new app) (both are good)
+
+# To add Model
+- create model class in models.py
+- run py manage.py makemigrations (to create migration file)
+- run py manage.py migrate (to execute migration file and reflect your model in database)
