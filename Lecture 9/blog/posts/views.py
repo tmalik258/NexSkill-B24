@@ -18,7 +18,11 @@ def home(request):
 
 
 def post_detail(request, post_id):
-    return render(request, 'post_detail.html')
+    post = BlogPost.objects.get(id=post_id) # to get a single object
+
+    return render(request, 'post_detail.html', {
+        "post": post,
+    })
 
 
 def about(request):
