@@ -6,6 +6,7 @@ from .models import BlogPost
 
 def home(request):
     # get all blog posts objects
+    # posts = BlogPost.objects.filter(body__icontains="This")
     posts = BlogPost.objects.all()
 
     message = "Welcome to Home Page this is a message"
@@ -14,6 +15,10 @@ def home(request):
         "message": message,
         "posts": posts
     })
+
+
+def post_detail(request, post_id):
+    return render(request, 'post_detail.html')
 
 
 def about(request):
